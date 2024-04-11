@@ -646,6 +646,8 @@ body{
     font-weight: 400;
     text-transform: initial;
     color: var(--whitesmoke);
+    box-shadow: var(--shadow);
+	
 }
 .social h6{
     font-size: 13px;
@@ -671,6 +673,7 @@ body{
     text-transform: initial;
     margin: 0 2px;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow);
 }
 .social a:hover{
     letter-spacing: 0.5px;
