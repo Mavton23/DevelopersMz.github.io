@@ -27,9 +27,22 @@ else{
 }
 // close menu
 
-menuButton = document.querySelector('.menu-toggler')
-leftside = document.querySelector('.left-side')
+showMenuButton = document.querySelector('.show-menu');
+menuButton = document.querySelector('.menu-toggler');
+leftside = document.querySelector('.left-side');
+
+showMenuButton.onclick = function(){
+    leftside.classList.remove('closed');
+}
 
 menuButton.onclick = function(){
-    leftside.classList.toggle('closed');
+    leftside.classList.add('closed');
+    showMenuButton.classList.add('active');
+}
+
+// Project link
+projectLinks = document.querySelectorAll('.link');
+
+projectLinks.onclick = function(){
+    alert('button was clicked')
 }
