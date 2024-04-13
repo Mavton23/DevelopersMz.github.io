@@ -646,8 +646,6 @@ body{
     font-weight: 400;
     text-transform: initial;
     color: var(--whitesmoke);
-    box-shadow: var(--shadow);
-	
 }
 .social h6{
     font-size: 13px;
@@ -673,7 +671,6 @@ body{
     text-transform: initial;
     margin: 0 2px;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow);
 }
 .social a:hover{
     letter-spacing: 0.5px;
@@ -832,10 +829,13 @@ body{
         display: -ms-flexbox;
         display: flex;
     }
+    .portfolio .portfolio-inner{
+        padding: 40px 25px;
+    }
     .portfolio .portfolio-item{
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
         margin-bottom: 30px;
         display: -ms-flexbox;
         display: flex;
@@ -872,5 +872,10 @@ body{
     }
     .contact .copyright p{
         font-size: 10px;
+    }
+}
+@media screen and (max-height: 500px){
+    .home .present{
+        margin-top: 60px;
     }
 }
