@@ -30,14 +30,17 @@ else{
 showMenuButton = document.querySelector('.show-menu');
 menuButton = document.querySelector('.menu-toggler');
 leftside = document.querySelector('.left-side');
+mainSec = document.querySelector('.main');
 
 showMenuButton.onclick = function(){
     leftside.classList.remove('closed');
+    mainSec.style.paddingLeft = '270px';
 }
 
 menuButton.onclick = function(){
     leftside.classList.add('closed');
     showMenuButton.classList.add('active');
+    mainSec.style.padding = '0';
 }
 
 // Project link
