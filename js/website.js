@@ -27,25 +27,25 @@ else{
 }
 // close menu
 
-showMenuButton = document.querySelector('.show-menu');
-menuButton = document.querySelector('.menu-toggler');
-leftside = document.querySelector('.left-side');
-mainSec = document.querySelector('.main');
-
-showMenuButton.onclick = function(){
-    leftside.classList.remove('closed');
-    mainSec.style.paddingLeft = '270px';
-}
-
-menuButton.onclick = function(){
-    leftside.classList.add('closed');
-    showMenuButton.classList.add('active');
-    mainSec.style.padding = '0';
-}
-
 // Project link
 projectLinks = document.querySelectorAll('.link');
 
 projectLinks.onclick = function(){
     alert('button was clicked')
+}
+
+// width
+document.querySelector('.show-menu').onclick = () => {
+    // Close menu when menutoggler button was clicked
+    document.querySelector('.menu-toggler').onclick = ()=>{
+        document.querySelector('.left-side').classList.remove('opened')
+    }
+    document.querySelector('.left-side').classList.add('opened')
+
+    // Close menu when an item was clicked
+    document.addEventListener("click", (e) => {
+        if(e.target.closest(".nav-item")){
+            document.querySelector('.left-side').classList.remove('opened')
+        }
+    })
 }
