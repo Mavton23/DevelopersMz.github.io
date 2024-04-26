@@ -752,7 +752,6 @@ body{
     .home{
         min-height: 100vh;
     }
-    
     .theme-btn{
         margin-right: 25px;
     }
@@ -785,7 +784,7 @@ body{
         margin: 20px;
     }
     .about .about-text p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .about .skills{
         -ms-flex: 0 0 80%;
